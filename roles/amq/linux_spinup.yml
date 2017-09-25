@@ -9,7 +9,7 @@
     type: t2.medium
     # security and server_group tag are the same name
     security_group: amq
-    server: "{{ app }}"
+    #server: "{{ app }}"
     group: "{{ security_group }}"
 
   tasks:
