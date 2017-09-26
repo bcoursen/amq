@@ -16,7 +16,7 @@
 
 - name: Copy JBoss AMQ
   copy:
-    src: ./roles/amq/files/"{{ jboss_amq_artifact_name }}"
+    src: ../roles/amq/files/"{{ jboss_amq_artifact_name }}"
     dest: "{{ jboss_amq_artifact_tmp_dest }}"
   when: transfer_method == 'copy-from-controller' and jboss_amq_exists.stat.exists == false
 
