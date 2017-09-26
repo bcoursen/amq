@@ -1,5 +1,5 @@
 ---
-- hosts: all
+- hosts: amq
 
   tasks:
   - name: debug
@@ -7,7 +7,7 @@
       var: install_broker
 
   - include: broker.yml
-    when: install_broker == 'true'
+    when: install_broker == true
 
   # - name: debug
   #   debug:
